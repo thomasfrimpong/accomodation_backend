@@ -102,3 +102,5 @@ Route::post('/number/of/guests', [ReportsController::class, 'numberOfGuests']);
 Route::post('/number/of/rentals', [ReportsController::class, 'numberOfRentals']);
 
 Route::get('/list/of/available/rooms', [ServicesController::class, 'listOfAvailableRooms']);
+
+Route::post('/check/out/guest', [ReportsController::class, 'checkOutGuest']);

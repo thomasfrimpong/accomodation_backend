@@ -258,7 +258,7 @@ class Data
 
     public static function availableRooms()
     {
-        $today = Carbon::now();
-        return Room::whereDate('date_of_availability', '<', $today)->get();
+
+        return Room::where('state_of_occupancy',  false)->get();
     }
 }

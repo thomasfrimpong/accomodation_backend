@@ -34,4 +34,8 @@ class ReportsController extends Controller
     {
         return Data::countOfRentals($request);
     }
+
+    public function checkOutGuest()
+    {
+    }
 }
